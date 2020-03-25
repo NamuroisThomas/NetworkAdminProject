@@ -3,7 +3,7 @@ options {
 	recursion yes;						#autorise les requêtes récursive
 	allow-query { localhost; 172.18.0.0/16; };	#autorise les requêtes venant de notre réseau interne
 	listen-on port 53 { localhost; 172.18.0.0/16; };		#écoute que sur le réseaux privé
-	forwarders { 172.19.0.2; }	#adresse ip de notre serveur SOA
+	forwarders { 172.19.0.2; };	#adresse ip de notre serveur SOA
 
 	// If there is a firewall between you and nameservers you want
 	// to talk to, you may need to fix the firewall to allow multiple

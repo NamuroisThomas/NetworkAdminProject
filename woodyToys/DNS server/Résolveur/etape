@@ -1,0 +1,2 @@
+1) docker build -t resolver .
+2) docker run -t -d -P -v /config:/etc/bind --name resolv resolver:latest

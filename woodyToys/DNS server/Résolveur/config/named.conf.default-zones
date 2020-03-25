@@ -27,4 +27,3 @@ zone "255.in-addr.arpa" {
 	file "/etc/bind/db.255";
 };
 
-

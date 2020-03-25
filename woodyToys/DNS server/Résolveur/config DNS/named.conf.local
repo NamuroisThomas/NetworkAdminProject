@@ -1,9 +1,0 @@
-zone "notre.nomdedomaine.com" {
-	type master;
-	file "/etc/bind/zone/db.notre.nomdedomaine.com";		#chemin du fichier de zone
-}
-
-zone "18.172.in-addr.arpa" {
-	type master;
-	file "/etc/bind/zones/db.18.172";		#sous-réseaux 172.18.0.0/16
-}
