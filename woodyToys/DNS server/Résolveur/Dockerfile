@@ -12,4 +12,4 @@ VOLUME /etc/bind
 EXPOSE 53/tcp
 EXPOSE 53/udp
 
-CMD ??
+CMD ?

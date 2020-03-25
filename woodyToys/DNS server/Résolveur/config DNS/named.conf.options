@@ -1,18 +1,9 @@
-#définit un access list
-acl "trusted" {
-	172.19.0.2;		#DNSserver
-	172.19.0.1; 	#webserver
-	172.19.0.4;		#mailserver
-	172.19.10.1; 	#DB
-	172.19.0.3; 	#voIP
-};
-
 options {
 	directory "/var/cache/bind";
-
-	recursion yes;				#autorise les requêtes récursive
-	allow-recursion { trusted; };	#autorise les requêtes récursive ne venant que des ip de trusted
-	listen-on { 172.19.0.2 };		#écoute que sur le réseaux privé
+	recursion yes;						#autorise les requêtes récursive
+	allow-query { localhost; 172.18.0.0/16; };	#autorise les requêtes venant de notre réseau interne
+	listen-on port 53 { localhost; 172.18.0.0/16; };		#écoute que sur le réseaux privé
+	forwarders { 172.19.0.2; }	#adresse ip de notre serveur SOA
 
 	// If there is a firewall between you and nameservers you want
 	// to talk to, you may need to fix the firewall to allow multiple
