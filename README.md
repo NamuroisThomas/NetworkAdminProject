@@ -1,2 +1,2 @@
 # NetworkAdminProject
-Project for the Netwrok Admin course at EPHEC
+Project for the Network Admin course at EPHEC
