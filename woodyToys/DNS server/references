@@ -12,3 +12,10 @@ https://www.digitalocean.com/community/tutorials/how-to-configure-bind-as-a-priv
 https://www.hiroom2.com/2018/05/06/ubuntu-1804-bind-en/
 
 https://www.linuxbabe.com/ubuntu/set-up-local-dns-resolver-ubuntu-18-04-16-04-bind9
+
+configuration résolveur
+https://www.digitalocean.com/community/tutorials/how-to-configure-bind-as-a-caching-or-forwarding-dns-server-on-ubuntu-14-04
+
+
+configuration avec des views
+https://www.howtoforge.com/two_in_one_dns_bind9_views

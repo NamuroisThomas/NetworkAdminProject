@@ -1,0 +1,23 @@
+1) se log à docker
+docker login --username=yourhubusername
+
+2) build l'image
+docker build -t dns .
+
+3)tag l'image à push sur le dockerhub
+docker tag [nom_image] yourhubusername/[repository]:[nom_image]
+
+4) push l'image sur le hub
+docker push adminproject6/project:tagname
+
+5) pull l'image sur le vps
+docker pull adminproject6/project:dns
+
+6)run l'image
+docker run -t -d -P -v config:/etc/bind 32953677deb1
+
+7) créer un ubuntu utilisateur
+docker pull ubuntu:18.04
+
+8) run un ubuntu
+docker run -it ubuntu
